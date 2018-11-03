@@ -1,0 +1,236 @@
+﻿body {
+    padding: 4em;
+    font: 1em 'Comfortaa', Comfortaa, sans-serif;
+    background-color: #000000;
+    color: #fdf6e3;
+    background-image: url("/images/logo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/*
+    the opacity settings of the page to allow for fading in and out elements and pages
+*/
+
+.fadeIn {
+    animation-fill-mode: forwards;
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fadeOut {
+    animation-fill-mode: forwards;
+    animation: fadeOut 1s;
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/*
+    this is the main flexbox for the website which serves to allow sections to adjust to fit the user's window
+*/
+
+.flexMain {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*
+    this is the main grid
+*/
+
+mainSection {
+    display: grid;
+    grid-template-rows: 6em 1fr;
+}
+
+contents {
+    grid-row: 2;
+}
+
+/*
+    standard button design for links, etc.
+*/
+
+.mediumButton {
+    background-color: #1c1c1c;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 2em;
+    cursor: pointer;
+
+    border-color: currentColor;
+    border: 0.1em solid;
+    height: 1.2em;
+    width: 10em;
+    border-radius: 1.5em;
+}
+    .mediumButton:hover {
+        filter: contrast(150%);
+    }
+    .mediumButton:active {
+        background-color: currentColor;
+        border-color: #1c1c1c;
+    }
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+
+/*
+    this is the standard text box design
+*/
+
+textBox {
+    display: grid;
+    grid-template-columns: 1em 30em 1em;
+    grid-template-rows: 1em 3em 23em 4em;
+
+    height: 32em;
+    width: 32em;
+    background-color: currentColor;
+    border-radius: 2em;
+    margin: 2em;
+}
+textBoxTitle {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    font-size: 2.5em;
+}
+textBoxText {
+    grid-column: 2 / 3;
+    grid-row: 3;
+    font-size: 1.5em;
+}
+
+textBoxFooter {
+    grid-column: 2 / 3;
+    grid-row: 4;
+    font-size: 1.5em;
+}
+
+/*
+    this is the changable size text box design
+*/
+
+minutesBox {
+    display: inline;
+    display: grid;
+    grid-template-columns: 1em 46em 1em;
+    grid-template-rows: 1em 3em 1fr;
+    width: 48em;
+    background-color: currentColor;
+    border-radius: 2em;
+    margin: 2em;
+}
+
+minutesBoxTitle {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    font-size: 2.5em;
+}
+
+minutesBoxText {
+    display: inline;
+    grid-column: 2 / 3;
+    grid-row: 3;
+    font-size: 1.5em;
+}
+
+/*
+    this is the privacy policy text box design
+*/
+
+privacyPolicyBox {
+    display: grid;
+    grid-template-columns: 1em 46em 1em;
+    grid-template-rows: 1em 3em 1fr;
+    height: 352em;
+    width: 48em;
+    background-color: currentColor;
+    border-radius: 2em;
+    margin: 2em;
+}
+
+privacyPolicyBoxTitle {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    font-size: 2.5em;
+}
+
+privacyPolicyBoxText {
+    grid-column: 2 / 3;
+    grid-row: 3;
+    font-size: 1.5em;
+}
+
+
+/*
+    This is the color scheme for the website. Partly based on the awesome Solarized colorscheme by Ethan Schoonover.
+    The origional solarized color scheme can be found at https://ethanschoonover.com/solarized/
+*/
+
+.base4 {
+    color: #aaaaaa;
+}
+
+.base3 {
+    color: #7a7a7a;
+}
+
+.base2 {
+    color: #3a3a3a;
+}
+
+.base1 {
+    color: #2d2d2d;
+}
+
+.base0 {
+    color: #1c1c1c;
+}
+
+.yellow {
+    color: #b58900;
+}
+
+.orange {
+    color: #cb4b16;
+}
+
+.red {
+    color: #dc322f;
+}
+
+.magenta {
+    color: #d33682;
+}
+
+.violet {
+    color: #6c71c4;
+}
+
+.blue {
+    color: #268bd2;
+}
+
+.cyan {
+    color: #2aa198;
+}
+
+.green {
+    color: #859900;
+}

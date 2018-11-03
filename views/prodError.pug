@@ -1,0 +1,16 @@
+﻿extends layout 
+
+block content 
+
+    mainSection
+        contents
+            div(class='flexMain')
+
+                textbox(class='base0', style='order: 0;')
+                    textBoxTitle(class='magenta') OOPSIE WOOPSIE!!
+                    textBoxText(class='base4')
+                        p Regrettably an error occured while attempting to access the resource you requested.
+                            | This has been logged to permit our team to repair the error. In the mean time
+                            | you may want to return to the homepage by clicking on the button below.
+                    textBoxFooter
+                            a(onclick='fadeTo("/")', style='font-size: 1.5em;',, class='cyan', class='mediumButton') Return Home
